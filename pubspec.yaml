@@ -1,0 +1,39 @@
+name: releve
+description: "SRM-FM Relevé App"
+publish_to: 'none' # This prevents accidental publishing to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations: # Add this line
+    sdk: flutter       # And this line
+
+  # Icons for iOS-style widgets (like CupertinoButton)
+  cupertino_icons: ^1.0.8
+
+  # CSV parsing library
+  csv: ^5.0.1
+
+  # Safe file picker version that works with Flutter v2/v3 Android embedding
+  file_picker: ^10.2.0
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Recommended lint rules
+  flutter_lints: ^5.0.0
+
+flutter:
+  assets:
+    - assets/data.csv
+
+  uses-material-design: true
+
+
